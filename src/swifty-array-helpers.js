@@ -18,7 +18,7 @@ Array.prototype.firstIndex = function (predicate) {
 };
 
 Array.prototype.firstWhere = function (predicate) {
-  const index = firstIndex(predicate);
+  const index = this.firstIndex(predicate);
   if (index != null) {
     return this[index];
   } else {
