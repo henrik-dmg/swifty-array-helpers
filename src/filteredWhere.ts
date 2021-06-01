@@ -15,9 +15,6 @@ if (Array.prototype.filteredWhere === undefined) {
         this: T[],
         predicate: (element: T) => boolean
     ) {
-        if (!(typeof predicate === "function")) {
-            throw "Predicate is not a function"
-        }
         let filteredArray: Array<T> = []
         for (let item of this) {
             if (predicate(item)) {

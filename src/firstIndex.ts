@@ -15,10 +15,7 @@ if (Array.prototype.firstIndex === undefined) {
         this: T[],
         predicate: (element: T) => boolean
     ) {
-        if (!(typeof predicate === "function")) {
-            throw "Passed in predicate is not a function"
-        }
-        if (!this.length) {
+        if (this === undefined || this.length == 0) {
             return null
         }
         for (let i = 0; i < this.length; i++) {
