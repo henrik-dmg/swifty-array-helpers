@@ -1,4 +1,4 @@
-import "./firstIndex"
+import './firstIndex'
 
 declare global {
     interface Array<T> {

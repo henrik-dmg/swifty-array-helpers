@@ -1,4 +1,4 @@
-import "./blank"
+import './blank'
 
 declare global {
     interface Array<T> {
