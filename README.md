@@ -38,7 +38,7 @@ Example:
 
 ```js
 const array = [5, 3, 7, 12]
-const index = array.firstWhere(x -> x <= 4) // 3
+const firstElementMatchingPredicate = array.firstWhere(x -> x <= 4) // 3
 ```
 
 ### filterWhere
@@ -48,5 +48,20 @@ Example:
 
 ```js
 const array = [5, 3, 7, 12]
-const index = array.filterWhere(x -> x <= 6) // [5, 3]
+const filteredArray = array.filterWhere(x -> x <= 6) // [5, 3]
+```
+
+### compactMap
+
+Maps all values, filtering `null` or `undefined` values out
+Example:
+
+```js
+const array = [
+  { name: 'Henrik' },
+  { name: 'Henrik', lastName: 'Panhans' },
+  { name: 'Henrik' },
+  { name: 'Henrik' }
+]
+const lastNames = array.compactMap(value -> value.lastName) // ["Panhans"]
 ```
