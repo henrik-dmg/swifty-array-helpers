@@ -10,8 +10,6 @@ declare global {
   }
 }
 
-const array = [{ name: 'Henrik' }, { name: 'Henrik', lastName: 'Panhans' }, { name: 'Henrik' }, { name: 'Henrik' }]
-
 if (Array.prototype.firstIndex === undefined) {
   Array.prototype.firstIndex = function <T>(this: T[], predicate: (element: T) => boolean) {
     if (this === undefined || this.length == 0) {

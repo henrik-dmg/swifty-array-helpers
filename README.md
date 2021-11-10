@@ -41,14 +41,14 @@ const array = [5, 3, 7, 12]
 const firstElementMatchingPredicate = array.firstWhere(x -> x <= 4) // 3
 ```
 
-### filterWhere
+### filteredWhere
 
 Filters the array based on the passed predicate
 Example:
 
 ```js
 const array = [5, 3, 7, 12]
-const filteredArray = array.filterWhere(x -> x <= 6) // [5, 3]
+const filteredArray = array.filteredWhere(x -> x <= 6) // [5, 3]
 ```
 
 ### compactMap
