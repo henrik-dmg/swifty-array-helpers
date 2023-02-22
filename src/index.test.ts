@@ -57,7 +57,7 @@ describe('firstWhere', () => {
     expect(name).toBe(undefined)
   })
   test('Should return undefined on empty arraz', () => {
-    const someArray = []
+    const someArray: string[] = []
     const name = firstWhere(someArray, element => element.startsWith('S'))
     expect(name).toBe(undefined)
   })
