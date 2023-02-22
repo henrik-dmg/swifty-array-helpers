@@ -1,6 +1,6 @@
 {
   "name": "@henrik-dmg/swifty-array-helpers",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "A set of convenience methods that extends Array's capabilities, inspired by Swift",
   "source": "src/index.ts",
   "main": "dist/main.js",
