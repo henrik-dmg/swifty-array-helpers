@@ -5,7 +5,7 @@
 
 ## What is this?
 
-A collection of functions for the `Array.prototype` inspired by the methods that are available in Swift
+A collection of functions for working with arrays inspired by the methods that are available in Swift
 
 ## Usage
 
@@ -15,10 +15,10 @@ You need to import the methods first. Example:
 
 ```js
 // ES6 module
-import 'swifty-array-helper/firstWhere'
+import '@henrik-dmg/swifty-array-helpers'
 
 // node.js
-require('swifty-array-helper/firstWhere')
+require('@henrik-dmg/swifty-array-helpers')
 ```
 
 ### firstIndex
@@ -28,7 +28,7 @@ Example:
 
 ```js
 const array = [5, 3, 7, 12]
-const index = array.firstIndex(x -> x <= 4) // 1
+const index = firstIndex(array, x => x <= 4) // 1
 ```
 
 ### firstWhere
@@ -38,17 +38,7 @@ Example:
 
 ```js
 const array = [5, 3, 7, 12]
-const firstElementMatchingPredicate = array.firstWhere(x -> x <= 4) // 3
-```
-
-### filteredWhere
-
-Filters the array based on the passed predicate
-Example:
-
-```js
-const array = [5, 3, 7, 12]
-const filteredArray = array.filteredWhere(x -> x <= 6) // [5, 3]
+const firstElementMatchingPredicate = firstWhere(array, x => x <= 4) // 3
 ```
 
 ### compactMap
@@ -63,5 +53,5 @@ const array = [
   { name: 'Henrik' },
   { name: 'Henrik' }
 ]
-const lastNames = array.compactMap(value -> value.lastName) // ["Panhans"]
+const lastNames = compactMap(array, value => value.lastName) // ["Panhans"]
 ```
