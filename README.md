@@ -1,7 +1,7 @@
 # Array Helpers for JavaScript
 
-![npm](https://img.shields.io/npm/v/swifty-array-helpers?logo=npm)
-![npm](https://img.shields.io/npm/dm/swifty-array-helpers?logo=npm)
+![npm](https://img.shields.io/npm/v/@henrik-dmg/swifty-array-helpers?logo=npm)
+![npm](https://img.shields.io/npm/dm/@henrik-dmg/swifty-array-helpers?logo=npm)
 
 ## What is this?
 
