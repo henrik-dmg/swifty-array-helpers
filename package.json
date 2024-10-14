@@ -1,37 +1,14 @@
 {
   "name": "@henrik-dmg/swifty-array-helpers",
-  "version": "2.0.6",
-  "description": "A set of convenience methods that extends Array's capabilities, inspired by Swift",
-  "source": "src/index.ts",
-  "main": "dist/main.js",
-  "types": "dist/types.d.ts",
-  "module": "dist/module.js",
-  "scripts": {
-    "dev": "parcel watch",
-    "build": "parcel build",
-    "lint": "eslint . --fix",
-    "test": "jest --coverage"
-  },
   "author": "Henrik Panhans",
   "license": "MIT",
-  "devDependencies": {
-    "@parcel/packager-ts": "^2.8.3",
-    "@parcel/transformer-typescript-types": "^2.8.3",
-    "@types/jest": "^29.4.0",
-    "@typescript-eslint/eslint-plugin": "^6.0.0",
-    "@typescript-eslint/parser": "^6.0.0",
-    "eslint": "^8.34.0",
-    "eslint-config-prettier": "^9.0.0",
-    "eslint-plugin-prettier": "^5.0.0",
-    "jest": "^29.4.3",
-    "parcel": "^2.8.3",
-    "prettier": "^3.0.0",
-    "ts-jest": "^29.0.5",
-    "typescript": "^5.0.0"
-  },
-  "jest": {
-    "preset": "ts-jest"
-  },
+  "version": "2.1.0",
+  "description": "A set of convenience methods that extends Array's capabilities, inspired by Swift",
+  "homepage": "https://github.com/henrik-dmg/swifty-array-helpers#readme",
+  "keywords": [
+    "array",
+    "extension"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/henrik-dmg/swifty-array-helpers.git"
@@ -39,9 +16,22 @@
   "bugs": {
     "url": "https://github.com/henrik-dmg/swifty-array-helpers/issues"
   },
-  "homepage": "https://github.com/henrik-dmg/swifty-array-helpers#readme",
-  "keywords": [
-    "array",
-    "extension"
-  ]
+  "source": "src/index.ts",
+  "main": "dist/main.js",
+  "module": "dist/module.js",
+  "types": "dist/types.d.ts",
+  "scripts": {
+    "watch": "parcel watch",
+    "build": "parcel build",
+    "test": "jest --coverage"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.13",
+    "jest": "^29.7.0",
+    "parcel": "latest",
+    "ts-jest": "^29.2.5"
+  },
+  "jest": {
+    "preset": "ts-jest"
+  }
 }
