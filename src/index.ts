@@ -18,7 +18,7 @@ export function compactMap<T, N>(array: Array<T>, transform: (element: T) => N |
  * @param predicate the predicate used for matching elements
  */
 export function firstIndex<T>(array: Array<T>, predicate: (element: T) => boolean): number | undefined {
-  if (array.length == 0) {
+  if (array.length === 0) {
     return undefined
   }
   for (let i = 0; i < array.length; i++) {
@@ -35,9 +35,8 @@ export function firstIndex<T>(array: Array<T>, predicate: (element: T) => boolea
  */
 export function firstWhere<T>(array: Array<T>, predicate: (element: T) => boolean): T | undefined {
   const index = firstIndex(array, predicate)
-  if (index == undefined) {
+  if (index === undefined) {
     return undefined
-  } else {
-    return array[index]
   }
+  return array[index]
 }
